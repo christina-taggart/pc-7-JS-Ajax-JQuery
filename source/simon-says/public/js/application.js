@@ -7,7 +7,7 @@ $(document).ready(function(){
       type: "POST",
       url: '/color'
     }).done(function(server_response) {
-      alert(server_response);
+      console.log(server_response);
     }) 
   });
 

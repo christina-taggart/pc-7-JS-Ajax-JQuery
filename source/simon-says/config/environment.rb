@@ -10,6 +10,7 @@ require 'rubygems'
 require 'shotgun'
 require 'uri'
 require 'pathname'
+require 'json'
 
 require 'pg'
 require 'active_record'
