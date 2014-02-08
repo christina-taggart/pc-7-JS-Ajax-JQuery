@@ -6,8 +6,8 @@ $(document).ready(function(){
     $.ajax({
       type: "POST",
       url: '/color'
-    }).done(function(server_response) {
-      console.log(server_response);
+    }).done(function(data) {
+      $(boxes[data.cell]).css('background-color', data.color);
     }) 
   });
 

@@ -4,7 +4,7 @@ end
 
 post '/color' do
   content_type :json
-  { cell: rand(1..9),
+  { cell: rand(9),
     color: "#" + "%06x" % (rand * 0xffffff)
   }.to_json
 end
