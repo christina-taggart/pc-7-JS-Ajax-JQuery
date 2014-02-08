@@ -9,4 +9,6 @@ post '/color' do
 
   cell= rand(1..9)
   color= "#" + "%06x" % (rand * 0xffffff)
+  send_this_data = {random_cell: cell, random_color: color}.to_json
+
 end
