@@ -1,10 +1,12 @@
+
 $(document).ready(function(){
-  $('a').on('click', function(serverResponse) {
+  $('a').on('click', function(event) {
+    event.preventDefault();
     $.ajax({
       type: 'POST',
       url: '/color'
-    }).done(
+    }).done(function(serverResponse){
       console.log(serverResponse)
-    )
+    })
   })
 });
