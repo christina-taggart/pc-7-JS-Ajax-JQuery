@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	$('#get_color').on('click', function(event){
 		event.preventDefault()
-		$.post('/color', {})
+		$.post('/color')
 			.done( function(data) {
 				$changeCell = $(find_nth_cell(data.cell,$color_grid))
 				$changeCell.css('background-color',data.color)
